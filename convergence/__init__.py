@@ -62,9 +62,9 @@ class Converge(object):
 
         response = requests.post(self.xml_endpoint, kwargs)
         response.raise_for_status()
-
         result = {}
-        for line in str(response.content).split('\n'):
+        decoded = response.content.decode('utf-8')
+        for line in decoded.split('\n'):
             k, v = line.split('=')
             result[k] = v
 
