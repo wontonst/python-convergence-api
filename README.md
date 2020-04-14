@@ -8,6 +8,12 @@ This package will work with python 2 and 3
 ## Installation
 
 ```
+pip install convergence-api
+```
+
+Or to get master
+
+```
 wget https://github.com/wontonst/python-converge-api/archive/master.zip
 unzip python-converge-api-master.zip
 pip install python-converge-api-master
