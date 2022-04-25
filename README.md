@@ -22,6 +22,7 @@ pip install python-converge-api-master
 ## Example usage
 Construct a new instance with your merchant ID, user ID, PIN and if you're using demo credentials or not.
 ```
+from convergence import Converge
 c = Converge('your merchant id', 'your user id', 'your pin', is_demo=True)
 ```
 You can then call any of the Converge transaction type with `->request()` and provide the transaction type as well as an array of key value pairs to send to the API. The package will use the demo or live endpoint automatically based on how you constructed the object.
